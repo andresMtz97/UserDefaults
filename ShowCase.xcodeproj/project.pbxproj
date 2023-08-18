@@ -13,6 +13,9 @@
 		7BF9D3772A87D595004D9122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF9D3752A87D595004D9122 /* Main.storyboard */; };
 		7BF9D3792A87D597004D9122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BF9D3782A87D597004D9122 /* Assets.xcassets */; };
 		7BF9D37C2A87D597004D9122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF9D37A2A87D597004D9122 /* LaunchScreen.storyboard */; };
+		7BF9D3852A87DF0D004D9122 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF9D3842A87DF0D004D9122 /* ViewControllerExtension.swift */; };
+		7BF9D3882A87E1BA004D9122 /* appConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF9D3872A87E1BA004D9122 /* appConstants.swift */; };
+		7BF9D38A2A87F6AA004D9122 /* HidingKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF9D3892A87F6AA004D9122 /* HidingKeyboardExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		7BF9D3782A87D597004D9122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BF9D37B2A87D597004D9122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BF9D37D2A87D597004D9122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BF9D3842A87DF0D004D9122 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		7BF9D3872A87E1BA004D9122 /* appConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appConstants.swift; sourceTree = "<group>"; };
+		7BF9D3892A87F6AA004D9122 /* HidingKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HidingKeyboardExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		7BF9D36E2A87D595004D9122 /* ShowCase */ = {
 			isa = PBXGroup;
 			children = (
+				7BF9D3862A87E17D004D9122 /* Constans */,
+				7BF9D3832A87DED8004D9122 /* Extensions */,
 				7BF9D36F2A87D595004D9122 /* AppDelegate.swift */,
 				7BF9D3712A87D595004D9122 /* SceneDelegate.swift */,
 				7BF9D3732A87D595004D9122 /* ViewController.swift */,
@@ -65,6 +73,23 @@
 				7BF9D37D2A87D597004D9122 /* Info.plist */,
 			);
 			path = ShowCase;
+			sourceTree = "<group>";
+		};
+		7BF9D3832A87DED8004D9122 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7BF9D3842A87DF0D004D9122 /* ViewControllerExtension.swift */,
+				7BF9D3892A87F6AA004D9122 /* HidingKeyboardExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7BF9D3862A87E17D004D9122 /* Constans */ = {
+			isa = PBXGroup;
+			children = (
+				7BF9D3872A87E1BA004D9122 /* appConstants.swift */,
+			);
+			path = Constans;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF9D38A2A87F6AA004D9122 /* HidingKeyboardExtension.swift in Sources */,
+				7BF9D3852A87DF0D004D9122 /* ViewControllerExtension.swift in Sources */,
 				7BF9D3742A87D595004D9122 /* ViewController.swift in Sources */,
 				7BF9D3702A87D595004D9122 /* AppDelegate.swift in Sources */,
 				7BF9D3722A87D595004D9122 /* SceneDelegate.swift in Sources */,
+				7BF9D3882A87E1BA004D9122 /* appConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
