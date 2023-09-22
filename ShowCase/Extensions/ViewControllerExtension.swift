@@ -42,6 +42,7 @@ extension ViewController : UITextViewDelegate {
     func textViewDidChangeSelection(_ textView: UITextView) {
         print("selected range: ",textView.text(in: textView.selectedTextRange!)!)
     }
+    
 }
 
 
