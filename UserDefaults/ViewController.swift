@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         textView.font = UIFont(name: currentFontFamily!, size: currentFontSize)
         textView.textColor = UIColor(red: currentFontRGBAColor[0], green: currentFontRGBAColor[1], blue: currentFontRGBAColor[2], alpha: currentFontRGBAColor[3])
 
-        //        set an action for valueChanged method
+        //set an action for valueChanged method
         fontColorControl.addTarget(self, action: #selector(fontColorControlChanged), for: .valueChanged)
         
     }

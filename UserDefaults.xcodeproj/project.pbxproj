@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7BF9D36C2A87D595004D9122 /* ShowCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BF9D36C2A87D595004D9122 /* UserDefaults.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserDefaults.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF9D36F2A87D595004D9122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BF9D3712A87D595004D9122 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7BF9D3732A87D595004D9122 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		7BF9D3632A87D595004D9122 = {
 			isa = PBXGroup;
 			children = (
-				7BF9D36E2A87D595004D9122 /* ShowCase */,
+				7BF9D36E2A87D595004D9122 /* UserDefaults */,
 				7BF9D36D2A87D595004D9122 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		7BF9D36D2A87D595004D9122 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7BF9D36C2A87D595004D9122 /* ShowCase.app */,
+				7BF9D36C2A87D595004D9122 /* UserDefaults.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7BF9D36E2A87D595004D9122 /* ShowCase */ = {
+		7BF9D36E2A87D595004D9122 /* UserDefaults */ = {
 			isa = PBXGroup;
 			children = (
 				7BF9D3862A87E17D004D9122 /* Constans */,
@@ -72,7 +72,7 @@
 				7BF9D37A2A87D597004D9122 /* LaunchScreen.storyboard */,
 				7BF9D37D2A87D597004D9122 /* Info.plist */,
 			);
-			path = ShowCase;
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 		7BF9D3832A87DED8004D9122 /* Extensions */ = {
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7BF9D36B2A87D595004D9122 /* ShowCase */ = {
+		7BF9D36B2A87D595004D9122 /* UserDefaults */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BF9D3802A87D597004D9122 /* Build configuration list for PBXNativeTarget "ShowCase" */;
+			buildConfigurationList = 7BF9D3802A87D597004D9122 /* Build configuration list for PBXNativeTarget "UserDefaults" */;
 			buildPhases = (
 				7BF9D3682A87D595004D9122 /* Sources */,
 				7BF9D3692A87D595004D9122 /* Frameworks */,
@@ -107,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = ShowCase;
+			name = UserDefaults;
 			productName = ShowCase;
-			productReference = 7BF9D36C2A87D595004D9122 /* ShowCase.app */;
+			productReference = 7BF9D36C2A87D595004D9122 /* UserDefaults.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +127,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7BF9D3672A87D595004D9122 /* Build configuration list for PBXProject "ShowCase" */;
+			buildConfigurationList = 7BF9D3672A87D595004D9122 /* Build configuration list for PBXProject "UserDefaults" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -140,7 +140,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7BF9D36B2A87D595004D9122 /* ShowCase */,
+				7BF9D36B2A87D595004D9122 /* UserDefaults */,
 			);
 		};
 /* End PBXProject section */
@@ -317,7 +317,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P2R43RKRE4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ShowCase/Info.plist;
+				INFOPLIST_FILE = UserDefaults/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,11 +328,14 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mx.bitmania.ShowCase;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.bitmania.UserDefaults;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -345,7 +348,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P2R43RKRE4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ShowCase/Info.plist;
+				INFOPLIST_FILE = UserDefaults/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -356,18 +359,21 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mx.bitmania.ShowCase;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.bitmania.UserDefaults;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7BF9D3672A87D595004D9122 /* Build configuration list for PBXProject "ShowCase" */ = {
+		7BF9D3672A87D595004D9122 /* Build configuration list for PBXProject "UserDefaults" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7BF9D37E2A87D597004D9122 /* Debug */,
@@ -376,7 +382,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7BF9D3802A87D597004D9122 /* Build configuration list for PBXNativeTarget "ShowCase" */ = {
+		7BF9D3802A87D597004D9122 /* Build configuration list for PBXNativeTarget "UserDefaults" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7BF9D3812A87D597004D9122 /* Debug */,
