@@ -30,6 +30,8 @@ extension ViewController : UIPickerViewDelegate{
         print("selected row", row)
         currentFontFamily = fontDataFamily[row]
         textView.font = UIFont(name: currentFontFamily!, size: currentFontSize)
+        saveConfig(key: "fontFamily", value: fontDataFamily[row])
+        saveConfig(key: "fontFamilyIndex", value: row)
     }
 }
 
@@ -37,6 +39,7 @@ extension ViewController : UIPickerViewDelegate{
 extension ViewController : UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
         print("Text changed!")
+        saveConfig(key: "text", value: textView.text!)
     }
     
     func textViewDidChangeSelection(_ textView: UITextView) {
@@ -45,4 +48,13 @@ extension ViewController : UITextViewDelegate {
     
 }
 
-
+extension ViewController {
+    func saveConfig(key: String, value: Any) {
+        UserDefaults.standard.set(value, forKey: key)
+        print("UD key: ", UserDefaults.standard.value(forKey: key)!)
+    }
+    
+    func getConfig(key: String) -> Any {
+        return UserDefaults.standard.object(forKey: key) as Any
+    }
+}
